@@ -1,0 +1,41 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://resources/tilemapPlants.tres" type="TileSet" id=1]
+[ext_resource path="res://resources/tilemap.tres" type="TileSet" id=2]
+[ext_resource path="res://resources/tilemapRocks.tres" type="TileSet" id=3]
+
+[node name="tileMap" type="TileMap"]
+z_index = -5
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 16, 16 )
+collision_layer = 3
+collision_mask = 3
+format = 1
+
+[node name="tileMapBg" type="TileMap" parent="."]
+modulate = Color( 0.5, 0.5, 0.5, 1 )
+z_index = -5
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 16, 16 )
+cell_half_offset = 1
+collision_layer = 0
+collision_mask = 0
+format = 1
+
+[node name="tileMapPlants" type="TileMap" parent="."]
+z_index = 1
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+cell_half_offset = 0
+collision_layer = 0
+collision_mask = 0
+format = 1
+
+[node name="tileMapRocks" type="TileMap" parent="."]
+z_index = 1
+tile_set = ExtResource( 3 )
+cell_size = Vector2( 16, 16 )
+cell_half_offset = 0
+collision_layer = 0
+collision_mask = 0
+format = 1

@@ -161,6 +161,7 @@ hframes = 11
 vframes = 4
 
 [node name="sprFaintLight" type="Sprite" parent="sprite"]
+visible = false
 modulate = Color( 1, 1, 1, 0.2 )
 position = Vector2( 0, -13 )
 scale = Vector2( 0.1, 0.1 )
@@ -169,6 +170,7 @@ texture = ExtResource( 3 )
 offset = Vector2( 2, -15 )
 
 [node name="lightOccluder2D" type="LightOccluder2D" parent="sprite"]
+visible = false
 z_index = -1
 occluder = SubResource( 8 )
 

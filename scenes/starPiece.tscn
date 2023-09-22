@@ -85,6 +85,7 @@ light_mask = 2
 texture = ExtResource( 2 )
 
 [node name="sprFaintLight2" type="Sprite" parent="sprite"]
+visible = false
 modulate = Color( 1, 1, 1, 0.2 )
 scale = Vector2( 0.1, 0.1 )
 z_index = 100
@@ -92,9 +93,11 @@ texture = ExtResource( 3 )
 offset = Vector2( 2, -15 )
 
 [node name="lightOccluder2D" type="LightOccluder2D" parent="sprite"]
+visible = false
 occluder = SubResource( 16 )
 
 [node name="light2D" type="Light2D" parent="."]
+visible = false
 position = Vector2( -22, -0.0681152 )
 rotation = 0.286499
 scale = Vector2( 2.48206, 54 )
